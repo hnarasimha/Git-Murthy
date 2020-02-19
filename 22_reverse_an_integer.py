@@ -51,7 +51,22 @@ def reverse(x):
             return(0)
 
 
-x = -120
-print(reverse(x))
+def reverse_2 (x):
+        if x >= 0:
+                reverse = int(str(x)[::-1])
+        else:
+                reverse =  -1 * int(str(x * -1)[::-1])
+        min_range = -1 * 2 ** 31
+        max_range = (2 ** 31) - 1
+        if reverse in range(min_range,max_range):
+                return reverse
+        else:
+                return (0)
+
+
+
+
+x = 1234567899
+print(reverse_2(x))
 
         
